@@ -1,0 +1,77 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: 820px) {
+        padding-left: 5px;
+    }
+   
+    .title{
+        font-size: 20px;
+        text-align: center;
+        padding: 5px 0;
+        border-bottom: 1px solid gray;
+
+        @media (max-width: 605px) {
+            font-size: 16px;
+        }
+    }
+
+    input{
+        position: relative;
+        margin: 20px 10px 10px 10px;
+        opacity: 0.5;
+        border: 1px solid #f0eded;
+        max-width: 190px;
+        border-radius: 10px;
+        font-size: 14px;
+        outline: none;
+        color: rgb(42, 42, 42);
+        padding: 8px 28px 8px 30px;
+
+        @media (max-width: 750px) {
+            max-width: 100px;
+        }
+
+        @media (max-width: 605px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 580px) {
+            max-width: 80px;
+        }
+
+        @media (max-width: 500px) {
+           margin-left: 15px;
+        }
+      
+        &:focus{
+            opacity: 0.7;
+        }
+      }
+    .searchImg{
+        position: absolute;
+        bottom: 17px;
+        left: 15px;
+
+        @media (max-width: 500px) {
+            bottom: 15px;
+            left: 25px;
+        }
+    }
+     
+    .removeImg{
+        position: absolute;
+        cursor: pointer;
+        bottom: 17px;
+        right: 15px;
+    }
+}   
+
+  
+
+  
+    
+  
+  

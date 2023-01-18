@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  overflow-y: scroll;
+  background: url('../public/image/bg.jpg') 50% 50%/cover no-repeat;
+  background-attachment: fixed;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 75% ;
+  margin: 35px auto;
+  padding: 10px;
+  background:rgba(46, 46, 46, 0.85);
+  color: rgb(210, 210, 210);
+  border-radius: 10px;
+
+  @media (max-width: 820px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animeBlock {
+    padding: 0 5px 0 13px;
+    max-width: 850px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    gap: 20px;
+
+
+    @media (max-width: 1176px) {
+      padding: 0 45px 0 50px;
+      gap: 30px;
+    }
+
+    @media (max-width: 950px) {
+      padding: 0 15px 0 20px;
+      gap: 20px;
+    }
+
+    @media (max-width: 820px) {
+      padding: 10px 0 0px 10px;
+      gap: 15px;
+    }
+
+    @media (max-width: 820px) {
+     justify-content: center;
+    }
+   
+  }
+
+  .sidePanel{
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    width: 23%; 
+    top: 0; 
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.714);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(210, 210, 210);
+
+    @media (max-width: 1100px) {
+      width: 190px; 
+     } 
+
+     @media (max-width: 820px) {
+      width: 98%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 500px) {
+      width: 175px;
+      flex-direction:column;
+      margin: 0 auto;
+    }
+  }
+
+}

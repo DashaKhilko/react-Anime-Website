@@ -1,0 +1,111 @@
+.sort {
+position: relative;
+display: flex;
+flex-direction: column;
+
+    @media (max-width: 820px) {
+        padding-right: 10px;
+        max-width: 170px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 0 0 10px 0;
+    }
+
+    .title{
+        font-size: 20px;
+        text-align: center;
+        padding: 5px 0;
+        border-bottom: 1px solid gray;
+
+        @media (max-width: 605px) {
+            font-size: 16px;
+        }
+    }
+
+    .currentSort{
+        display: flex;
+        justify-content:right;
+        font-size: 16px;
+        margin: 15px 17px;
+        cursor: pointer;
+
+        @media (max-width: 820px) {
+            margin: 23px 0 0 0;
+            justify-content: center;
+        }
+        @media (max-width: 605px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 500px) {
+            margin: 15px 0 0 0;
+        }
+
+        svg{
+        margin: 7px 3px 0 0 ;
+        }
+    }
+
+    .popup {
+        position: absolute;
+        right: 1px;
+        top: 80px;
+        background-color: #636363;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.409);
+        border-radius: 5px;
+        overflow: hidden;
+        max-width: 270px;
+
+        @media (max-width: 820px) {
+            right: 00px;
+            top: 100px;
+        }
+
+        @media (max-width: 605px) {
+            right: -10px;
+            top: 90px;
+        }
+
+        @media (max-width: 500px) {
+            left: -2px;
+            top: 80px;
+        }
+
+        ul {
+        margin: 10px 10px;
+            li {
+                font-size: 16px;
+                padding: 5px 10px 5px 0;
+                margin-bottom: 5px;
+                border-radius: 0 30px 30px 0;
+                text-align: right;
+                cursor: pointer;
+                transition: background-color 0.1s ease-in-out;
+
+                @media (max-width: 820px) {
+                    border-radius: 30px;
+                    text-align: center;
+                    padding: 5px 10px;
+                }
+
+                @media (max-width: 605px) {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                background-color: #444444;
+                }
+
+                &:active {
+                background-color: #434343;
+                }
+                
+                &.activeSort {
+                background-color: rgb(37, 37, 37);
+                }
+            }
+        }
+    }
+}
+

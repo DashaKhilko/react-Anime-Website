@@ -1,0 +1,30 @@
+header {
+  position: relative;
+  width: 300px;
+  margin: auto;
+  cursor: pointer;
+
+  .title{
+    position: absolute;
+    font-weight:900;
+    top: 130px;
+    font-size: 38px;
+    color: rgb(72, 63, 120);
+    text-shadow: 0px 0px 25px rgb(255, 255, 255);
+    
+    &:hover {
+      color: rgb(193, 192, 192);
+    }
+  }
+
+  svg{
+    max-width: 280px;
+    height: 180px;
+  }
+}
+  
+  
+  
+  
+  
+  

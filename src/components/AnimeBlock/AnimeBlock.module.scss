@@ -1,0 +1,46 @@
+.animeBlock{
+    display: flex;
+    color: rgb(164, 164, 164);
+    flex-direction: column;
+    max-width: 180px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+    .image{
+        text-align: center;
+        img {
+            width: 180px;
+            height: 250px;
+            border-radius: 2px;  
+            cursor: pointer;
+            transition-duration: 0.1s;
+
+            &:hover{
+                box-shadow: 0px 0px 20px rgb(0, 0, 0);
+                transform: translateY(-3px);
+            }
+        }
+        
+    }
+    .title{
+        font-size: 22px;
+        font-weight: 600;
+        margin: 5px 0 10px 0;
+        text-align: center;
+        text-decoration: underline;
+        color: rgba(171, 149, 222, 0.827);
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(148, 148, 148);
+        }
+        
+        &:active {
+            color: rgb(231, 231, 231);
+        }
+    }
+    .numberOfSeasons{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+}
