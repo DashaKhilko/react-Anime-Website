@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/DashaKhilko/react-AnimeWebsite/static/css/main.fe107067.css",
+    "main.js": "/DashaKhilko/react-AnimeWebsite/static/js/main.4f4c6f50.js",
+    "static/media/bg.jpg": "/DashaKhilko/react-AnimeWebsite/static/media/bg.bf06a62ee1778e8a6053.jpg",
+    "index.html": "/DashaKhilko/react-AnimeWebsite/index.html",
+    "main.fe107067.css.map": "/DashaKhilko/react-AnimeWebsite/static/css/main.fe107067.css.map",
+    "main.4f4c6f50.js.map": "/DashaKhilko/react-AnimeWebsite/static/js/main.4f4c6f50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe107067.css",
+    "static/js/main.4f4c6f50.js"
+  ]
+}
